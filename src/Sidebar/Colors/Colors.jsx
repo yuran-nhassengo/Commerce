@@ -20,6 +20,12 @@ export const Colors = ({handleChange}) => {
         name="test1"
         color='black'
         />
+        <Input handleChange={handleChange}
+        value="blue"
+        title="Blue"
+        name="test1"
+        color='blue'
+        />
        </div>
     </div>
   )

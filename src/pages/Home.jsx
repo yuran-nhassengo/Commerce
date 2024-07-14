@@ -20,13 +20,13 @@ export const Home = () => {
   
 
   const handleInputChange = event =>{  
-    
+
     setQuery(event.target.value);
 
   }
 
   const filteredItems = products.filter((product) => 
-    product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase() !== -1));
+    product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase() )!== -1);
 
   //--------------Radio Filter----------------
   const handleChange = event => {
@@ -83,9 +83,9 @@ export const Home = () => {
   return (
     <div>
       <SideBar handleChange ={handleChange}/>
-       <Nav />
-      <Recommended/>
-      <Products/>
+       <Nav query={query}/>
+      <Recommended handleClick={handleClick}/>
+      <Products result={result}/>
     </div>
   )
 }

@@ -8,11 +8,14 @@ export const Products = () => {
     <>
     <section className="card-container">
       <section className='card'>
-        <img src="https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg" alt="Shoe" />
+        <img src="https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg" alt="Shoe" className='card-img' />
         <div className="card-details">
           <h3 className='card-title'>Shoe</h3>
           <section className="card-reviews">
-          <AiFillStar/> <AiFillStar/> <AiFillStar/>
+          <AiFillStar className='ratings-start' /> 
+          <AiFillStar className='ratings-start'/> 
+          <AiFillStar className='ratings-start'/>
+          <AiFillStar className='ratings-start'/>
           <span className='total-reviws'>4</span>
           </section>
           <section className="card-price">
@@ -21,7 +24,7 @@ export const Products = () => {
             </div>
 
             <div className="bag">
-              <BsFillBagHeartFill/>
+              <BsFillBagHeartFill className='bag-icon'/>
             </div>
           </section>
         </div>

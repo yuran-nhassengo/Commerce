@@ -2,16 +2,25 @@ import React from 'react'
 import './Colors.css'
 import { Input } from '../../components/Input'
 
-export const Colors = () => {
+export const Colors = ({handleChange}) => {
   return (
     <div>
 
     <h2 className="sidebar-title color-title">Colors</h2>
      
-    <Input/>
-    <Input/>
-    <Input/>
-    <Input/>
+    <div>
+        <label className="sidebar-label-container">
+          <input onChange={handleChange} type='radio' value="" name='test' />
+          <span className='checkmark'></span>All
+        </label>
+
+        <Input handleChange={handleChange}
+        value="black"
+        title="Black"
+        name="test1"
+        color='black'
+        />
+       </div>
     </div>
   )
 }

@@ -19,7 +19,8 @@ export const Home = () => {
   //--------------Input Filter----------------
   
 
-  const handleInputChange = event =>{
+  const handleInputChange = event =>{  
+    
     setQuery(event.target.value);
 
   }
@@ -77,11 +78,11 @@ export const Home = () => {
 
   }
 
-  const result =    filteredData(products,selectedCategory,query);
+  const result = filteredData(products,selectedCategory,query);
 
   return (
     <div>
-      <SideBar/>
+      <SideBar handleChange ={handleChange}/>
        <Nav />
       <Recommended/>
       <Products/>

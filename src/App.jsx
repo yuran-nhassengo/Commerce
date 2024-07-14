@@ -14,7 +14,6 @@ function App() {
     <>
       <Nav />
      <RouterProvider router={route}/>
-     <Recommended/>
     </>
   )
 }
